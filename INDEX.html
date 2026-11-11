@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VANTA — Brand Creation Studio for Creators</title>
+<meta name="description" content="VANTA is an independent brand creation studio for creators and emerging personalities. We build distinctive brands through strategy, storytelling, visual identity and product development.">
+<meta name="theme-color" content="#0F0F11">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VANTA — Brand Creation Studio for Creators">
+<meta property="og:description" content="We turn creators’ identities into distinctive brands — from strategy and visual identity to product concepts and brand applications.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230F0F11'/%3E%3Cpath d='M12 14 24 50 36 14M40 14h14M47 14v36' fill='none' stroke='%23C9A66B' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=IBM+Plex+Mono:wght@400;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+:root{
+  --ink:#0F0F11; --ink-2:#17171B; --ink-3:#1F1F24; --line:#2E2E34;
+  --ivory:#F2EFEA; --muted:#A9A6A0; --faint:#6E6A72;
+  --gold:#C9A66B; --gold-soft:#E8D3A8; --gold-deep:#8A6A2F;
+  --paper:#F4F1EB; --paper-2:#EAE4D9; --paper-ink:#15151A; --paper-muted:#55535A;
+  --f-display:'Comfortaa', 'Trebuchet MS', sans-serif;
+  --f-body:'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  --f-mono:'IBM Plex Mono', 'Courier New', monospace;
+  --f-serif:'Libre Caslon Text', Georgia, serif;
+  --wrap:1180px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--ivory);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+main{overflow-x:clip}
+section[id]{scroll-margin-top:76px}
+.band{padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));padding-block:96px}
+.wrap{max-width:var(--wrap);margin-inline:auto}
+.paper{background:var(--paper);color:var(--paper-ink)}
+.eyebrow{font-family:var(--f-mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.paper .eyebrow{color:var(--gold-deep)}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:clamp(30px,4.4vw,52px)}
+h3{font-size:22px}
+p{margin:0}
+.lede{font-size:19px;color:var(--muted);max-width:62ch}
+.paper .lede{color:var(--paper-muted)}
+.head{display:flex;flex-direction:column;gap:14px;margin-bottom:48px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb, var(--ink) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px))}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.logo{display:block;width:118px;height:24px}
+.nav{display:flex;gap:26px;align-items:center;font-size:15px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--ivory)}
+.nav a.btn,.nav a.btn:hover{color:var(--paper-ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:600 15px/1 var(--f-body);padding:13px 20px;border-radius:999px;border:1px solid var(--gold);background:var(--gold);color:var(--paper-ink);text-decoration:none;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--gold-soft)}
+.btn.ghost{background:transparent;color:var(--ivory);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold-soft)}
+.btn[aria-pressed="true"]{border-color:var(--gold);color:var(--gold-soft)}
+@media (max-width:760px){.nav{gap:14px;font-size:13px}.nav .btn{display:none}}
+@media (max-width:380px){.nav{gap:10px;font-size:12px}}
+.hero{padding-block:40px 80px}
+.stage{position:relative;height:clamp(300px,46vw,540px);border-radius:22px;overflow:hidden;background:var(--paper);isolation:isolate;border:1px solid var(--line)}
+.layer{position:absolute;inset:0;transform-origin:50% 50%}
+.page{position:absolute;left:0;top:0;white-space:nowrap}
+.page .ln{display:block}
+.page mark{padding:.02em .22em;border-radius:.12em;color:inherit}
+.t-paper{color:#2A2A30}.t-paper mark{background:var(--gold-soft);color:#15151A}
+.t-cream{color:#3A3328}.t-cream mark{background:#F1C94B;color:#15151A}
+.t-ink{color:#C9C4BA}.t-ink mark{background:var(--gold);color:#15151A}
+.t-white{color:#222}.t-white mark{background:#FFE36E;color:#111}
+.stage::after{content:"";position:absolute;inset:0;pointer-events:none;backdrop-filter:blur(var(--edge-blur,1.6px));-webkit-backdrop-filter:blur(var(--edge-blur,1.6px));mask-image:radial-gradient(ellipse 46% 40% at 50% 50%, transparent 55%, #000 100%);-webkit-mask-image:radial-gradient(ellipse 46% 40% at 50% 50%, transparent 55%, #000 100%);z-index:2}
+.stage::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;background:radial-gradient(ellipse 70% 70% at 50% 50%, transparent 60%, rgba(10,10,12,.35) 100%)}
+.flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none;z-index:4}
+.badge{position:absolute;left:14px;bottom:12px;z-index:5;font:600 11px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:#15151A;background:rgba(242,239,234,.85);padding:7px 10px;border-radius:999px}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+.field{flex:1 1 280px;min-width:0;display:flex;align-items:center;gap:10px;background:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 18px}
+.field:focus-within{border-color:var(--gold)}
+.field input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--ivory);font:500 17px var(--f-body);padding:8px 0}
+.field input::placeholder{color:var(--faint)}
+.kbd{font:600 12px var(--f-mono);color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:3px 7px}
+.count{font:12px var(--f-mono);color:var(--faint);min-width:38px;text-align:right}
+.hero-copy{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;margin-top:56px}
+.hero-copy h1{font-size:clamp(36px,5.6vw,68px)}
+.hero-copy .side{display:flex;flex-direction:column;gap:20px}
+@media (max-width:860px){.hero-copy{grid-template-columns:1fr;gap:24px}}
+.hl{background:linear-gradient(transparent 58%, color-mix(in srgb, var(--gold) 55%, transparent) 58%) no-repeat 0 0 / 0% 100%;transition:background-size .9s cubic-bezier(.2,.7,.2,1)}
+.paper .hl{background-image:linear-gradient(transparent 58%, var(--gold-soft) 58%)}
+.hl.on{background-size:100% 100%}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:var(--paper-2);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.step:last-child{background:var(--paper-ink);color:var(--ivory)}
+.step .num{font:600 13px var(--f-mono);color:var(--gold-deep);letter-spacing:.1em}
+.step:last-child .num{color:var(--gold)}
+.step p{color:var(--paper-muted)}
+.step:last-child p{color:var(--muted)}
+.ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--paper-ink);color:var(--gold)}
+.step:last-child .ico{background:var(--gold);color:var(--paper-ink)}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.vs{display:grid;grid-template-columns:1fr 1fr;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.vs > div{padding:40px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.vs .old{background:var(--ink-2)}
+.vs .new{background:var(--gold);color:var(--paper-ink)}
+.vs ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.vs li{display:flex;gap:12px;align-items:flex-start}
+.vs .old li{color:var(--muted)}
+.vs .tag{font:600 12px var(--f-mono);letter-spacing:.14em;text-transform:uppercase}
+.vs .old .tag{color:var(--faint)}
+@media (max-width:760px){.vs{grid-template-columns:1fr}}
+.method{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.m{border:1px solid var(--line);border-radius:20px;padding:26px 22px;display:flex;flex-direction:column;gap:10px;background:var(--ink-2);min-width:0;transition:border-color .25s, transform .25s}
+.m:hover{border-color:var(--gold);transform:translateY(-4px)}
+.m .L{font:700 clamp(56px,7vw,92px)/1 var(--f-display);background:linear-gradient(180deg,var(--ivory),#6E6A62);-webkit-background-clip:text;background-clip:text;color:transparent}
+.m.key{border-color:var(--gold);background:linear-gradient(180deg,#2A2316,var(--ink-2))}
+.m.key .L{background:linear-gradient(180deg,#F3DDAE,#A9864C);-webkit-background-clip:text;background-clip:text}
+.m .w{font:600 13px var(--f-mono);color:var(--gold);letter-spacing:.06em}
+.m p{color:var(--muted);font-size:15px}
+@media (max-width:980px){.method{grid-template-columns:repeat(2,1fr)}.m:last-child{grid-column:span 2}}
+@media (max-width:520px){.method{grid-template-columns:1fr}.m:last-child{grid-column:auto}}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prod{background:#FBFAF7;border-radius:20px;padding:14px 14px 18px;display:flex;flex-direction:column;gap:10px;align-items:center;min-width:0;transition:transform .25s}
+.prod:hover{transform:translateY(-4px)}
+.prod .art{align-self:stretch;aspect-ratio:1/1;max-width:100%;background:var(--paper-2);border-radius:14px;display:grid;place-items:center}
+.prod svg{width:74%;height:auto}
+.prod b{font:700 16px var(--f-display)}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+.name{display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.hole{aspect-ratio:1/1;max-width:100%;width:min(420px,100%);justify-self:center;border-radius:50%;background:#000;box-shadow:0 0 0 2px #3A2E18, 0 0 120px 20px rgba(201,166,107,.28);position:relative}
+.hole::after{content:"";position:absolute;inset:-14%;border-radius:50%;border:1px dashed rgba(201,166,107,.35);animation:spin 40s linear infinite}
+.shine{font:700 clamp(28px,3.6vw,44px)/1.2 var(--f-display);background:linear-gradient(90deg,#F3DDAE,#C9A66B 60%,#A9864C);-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (max-width:820px){.name{grid-template-columns:1fr}}
+.found{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:stretch}
+.perks{background:var(--ink-2);border:1px solid var(--gold);border-radius:24px;padding:32px;display:flex;flex-direction:column}
+.perks div{display:flex;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.perks div:last-child{border-bottom:0}
+@media (max-width:820px){.found{grid-template-columns:1fr}}
+.contact{display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+.contact .logo-big{width:min(520px,90%);height:auto}
+.chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.chip{display:flex;align-items:center;gap:12px;background:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:8px 8px 8px 20px;min-width:0}
+.chip span{font:500 16px var(--f-body)}
+.chip button{font:600 12px var(--f-mono);letter-spacing:.06em;background:var(--ink-3);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:8px 12px;cursor:pointer}
+.chip button:hover{color:var(--gold-soft);border-color:var(--gold)}
+.social{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.soc{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ivory);background:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:12px 20px;font:600 15px var(--f-body)}
+.soc svg{color:var(--gold)}
+.soc:hover{border-color:var(--gold);color:var(--gold-soft)}
+.plist{list-style:none;margin:0;padding:0;border-top:1px solid #D5CDBE}
+.prow{position:relative;display:grid;grid-template-columns:64px 1.1fr 1.6fr 120px 40px;align-items:center;gap:16px;padding:26px 8px;border-bottom:1px solid #D5CDBE;isolation:isolate;cursor:default}
+.prow::before{content:"";position:absolute;inset:0;background:var(--paper-ink);transform:scaleY(0);transform-origin:bottom;transition:transform .55s cubic-bezier(.7,0,.2,1);z-index:-1}
+.prow:hover::before{transform:scaleY(1)}
+.prow:hover{color:var(--ivory)}
+.pn{font:600 13px var(--f-mono);color:var(--gold-deep)}
+.pt{font:700 clamp(24px,3vw,40px)/1.1 var(--f-display);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.prow:hover .pt{transform:translateX(14px)}
+.pd{color:var(--paper-muted);min-width:0}
+.prow:hover .pd{color:var(--muted)}
+.pc{font:600 12px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--paper-muted);text-align:right}
+.pa{font-size:24px;text-align:right;transition:transform .5s cubic-bezier(.2,.7,.2,1);color:var(--gold-deep)}
+.prow:hover .pa{transform:rotate(-45deg);color:var(--gold)}
+.prow:hover .pn,.prow:hover .pc{color:var(--gold)}
+@media (max-width:760px){.prow{grid-template-columns:44px 1fr 28px;padding:20px 4px}.pd,.pc{display:none}}
+.marquee{overflow:hidden;border-block:1px solid var(--line);padding-block:22px;background:var(--ink)}
+.track{display:flex;gap:40px;white-space:nowrap;width:max-content;will-change:transform}
+.track span{font:700 clamp(30px,5vw,64px)/1 var(--f-display);color:transparent;-webkit-text-stroke:1.2px var(--gold)}
+.track span:nth-of-type(2n){color:var(--ivory);-webkit-text-stroke:0}
+.track i{font-style:normal;color:var(--gold);font-size:clamp(20px,3vw,36px);align-self:center}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em;margin-bottom:-.1em}
+.wi{display:inline-block;will-change:transform}
+#loader{position:fixed;inset:0;z-index:100;background:var(--ink);display:grid;place-items:center;animation:ld-out .7s cubic-bezier(.8,0,.2,1) .9s forwards}
+#loader svg{width:min(380px,70vw);height:auto}
+#loader path{stroke-dasharray:1;stroke-dashoffset:1;animation:ld-draw .6s cubic-bezier(.6,0,.2,1) forwards}
+#loader path:nth-child(2){animation-delay:.08s}#loader path:nth-child(3){animation-delay:.16s}#loader path:nth-child(4){animation-delay:.24s}#loader path:nth-child(5){animation-delay:.28s}#loader path:nth-child(6){animation-delay:.36s}
+#loader .ld-dot{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:ld-pop .3s cubic-bezier(.3,1.6,.5,1) .6s forwards}
+#ld-count{position:absolute;right:max(24px, env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));font:600 13px var(--f-mono);color:var(--muted);letter-spacing:.1em}
+@keyframes ld-draw{to{stroke-dashoffset:0}}
+@keyframes ld-pop{to{transform:scale(1)}}
+@keyframes ld-out{to{clip-path:inset(0 0 100% 0);visibility:hidden}}
+#loader{clip-path:inset(0 0 0 0)}
+.top{transition:transform .45s cubic-bezier(.7,0,.2,1)}
+@media (prefers-reduced-motion:reduce){#loader{display:none}.top{transition:none}}
+.vlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.vrow{display:grid;grid-template-columns:150px 1fr 1.35fr;gap:32px;align-items:start;padding:40px 0;border-bottom:1px solid var(--line)}
+.vrow .L{font:700 clamp(84px,10vw,140px)/.85 var(--f-display);background:linear-gradient(180deg,var(--ivory),#5E5A54);-webkit-background-clip:text;background-clip:text;color:transparent}
+.vrow.key .L{background:linear-gradient(180deg,#F3DDAE,#A9864C);-webkit-background-clip:text;background-clip:text}
+.vt{display:flex;flex-direction:column;gap:12px;min-width:0}
+.vw{font:600 13px var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.vt h3{font-size:clamp(24px,2.6vw,34px)}
+.vb{display:flex;flex-direction:column;gap:16px;min-width:0;color:var(--muted)}
+.vb .you{color:var(--ivory);border-left:2px solid var(--gold);padding-left:14px}
+.vb .you b{color:var(--gold-soft);font-weight:700}
+.vrow.key{background:linear-gradient(90deg,rgba(201,166,107,.08),transparent 70%)}
+@media (max-width:860px){.vrow{grid-template-columns:1fr;gap:14px;padding:30px 0}.vrow .L{font-size:84px}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.pkgs{border:0;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.pkg{position:relative;display:flex;flex-direction:column;gap:14px;background:#FBFAF7;border:2px solid #E2DBCD;border-radius:24px;padding:30px;cursor:pointer;min-width:0;transition:border-color .25s, transform .25s, box-shadow .25s}
+.pkg:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(60,45,20,.10)}
+.pkg input{position:absolute;opacity:0;pointer-events:none}
+.pkg:has(input:focus-visible){outline:2px solid var(--gold-deep);outline-offset:3px}
+.pkg:has(input:checked){border-color:var(--gold);box-shadow:0 0 0 4px rgba(201,166,107,.25)}
+.pk-top{display:flex;justify-content:space-between;align-items:center}
+.tier{font:600 12px var(--f-mono);letter-spacing:.16em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:var(--paper-2);color:var(--gold-deep)}
+.pick{width:24px;height:24px;border-radius:50%;border:2px solid #CFC7B8;display:grid;place-items:center}
+.pkg:has(input:checked) .pick{border-color:var(--gold);background:var(--gold);box-shadow:inset 0 0 0 4px #FBFAF7}
+.pkg h3{font-size:28px}
+.pkg .sub{color:var(--paper-muted)}
+.pkg .plus{font-weight:700;color:var(--gold-deep);font-size:15px}
+.pkg ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px;flex:1}
+.pkg li{display:flex;gap:12px;align-items:flex-start}
+.pkg li svg,.pkg li>span{flex:none;margin-top:3px;color:var(--gold-deep)}.pkg li>span{font-weight:700;font-size:17px;line-height:1.4}
+.pkg li div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pkg li b{font-weight:700}
+.pkg li span{font-size:15px;color:var(--paper-muted);line-height:1.5}
+.choose{margin-top:6px;text-align:center;font:600 15px var(--f-body);padding:13px;border-radius:999px;border:1px solid var(--paper-ink);transition:background .25s,color .25s}
+.pkg:hover .choose{background:var(--paper-ink);color:var(--ivory)}
+.pkg:has(input:checked) .choose{background:var(--gold);border-color:var(--gold);color:var(--paper-ink)}
+.pkg-black{background:var(--paper-ink);color:var(--ivory);border-color:var(--paper-ink)}
+.pkg-black .sub,.pkg-black li span{color:var(--muted)}
+.pkg-black .tier{background:var(--gold);color:var(--paper-ink)}
+.pkg-black .plus,.pkg-black li svg,.pkg-black li>span{color:var(--gold)}
+.pkg-black .pick{border-color:#4A4A52}
+.pkg-black:has(input:checked) .pick{box-shadow:inset 0 0 0 4px var(--paper-ink)}
+.pkg-black .choose{border-color:var(--gold);color:var(--gold-soft)}
+.pkg-black:hover .choose{background:var(--gold);color:var(--paper-ink)}
+.pick-bar{margin-top:28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--paper-ink);color:var(--ivory);border-radius:20px;padding:18px 18px 18px 26px}
+.pick-bar p{min-width:0}
+.pick-bar b{color:var(--gold-soft)}
+.pick-bar .btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.chosen{font:600 15px var(--f-body);color:var(--paper-ink);background:var(--gold);padding:8px 16px;border-radius:999px}
+@media (max-width:980px){.pkgs{grid-template-columns:1fr}}
+.social .soc{width:64px;height:64px;padding:0;justify-content:center;border-radius:50%}
+.social .soc span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.social .soc svg{width:26px;height:26px}
+.social{gap:16px}
+footer{border-top:1px solid var(--line);padding-block:28px;padding-left:max(16px, env(safe-area-inset-left,0px));padding-right:max(16px, env(safe-area-inset-right,0px));color:var(--faint);font:13px var(--f-mono)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media (prefers-reduced-motion:reduce){.hl{transition:none}.hole::after{animation:none}html{scroll-behavior:auto}.m,.prod{transition:none}}
+</style>
+<div id="loader" aria-hidden="true"><svg viewBox="0 0 520 104"><g fill="none" stroke="#F2EFEA" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"><path pathLength="1" d="M8,8 L40,92 L72,8"/><path pathLength="1" d="M112,92 L144,8 L176,92"/><path pathLength="1" d="M216,92 L216,8 L280,92 L280,8"/><path pathLength="1" d="M320,8 L384,8"/><path pathLength="1" d="M352,8 L352,92"/><path pathLength="1" d="M424,92 L456,8 L488,92"/></g><circle class="ld-dot" cx="508" cy="95" r="9" fill="#C9A66B"/></svg><span id="ld-count">0</span></div>
+<header class="top">
+  <div class="wrap">
+    <a href="#top" aria-label="VANTA home"><svg class="logo" viewBox="0 0 520 104" aria-hidden="true"><g fill="none" stroke="#F2EFEA" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"><path d="M8,8 L40,92 L72,8"/><path d="M112,92 L144,8 L176,92"/><path d="M216,92 L216,8 L280,92 L280,8"/><path d="M320,8 L384,8 M352,8 L352,92"/><path d="M424,92 L456,8 L488,92"/></g><circle cx="508" cy="95" r="9" fill="#C9A66B"/></svg></a>
+    <nav class="nav" aria-label="Main">
+      <a class="lnk" href="#how">How it works</a>
+      <a class="lnk" href="#method">Method</a>
+      <a class="lnk" href="#products">Applications</a>
+      <a class="lnk" href="#packages">Packages</a>
+      <a class="btn" href="#contact">Start your brand</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="band hero">
+    <div class="wrap">
+      <div class="stage" id="stage" aria-label="The word VANTA stays in the center while pages of text cut around it">
+        <div class="layer" id="layer"></div>
+        <div class="flash" id="flash"></div>
+        <span class="badge" id="badge">Match cut · 12 fps</span>
+      </div>
+      <div class="hero-copy" style="margin-top:44px">
+        <h1>We turn <span class="hl">your name</span> into a brand people want to own.</h1>
+        <div class="side">
+          <p class="lede">VANTA is an independent brand creation studio for creators and emerging personalities. We turn personal identities into distinctive brands through strategy, storytelling and visual identity — with product development and brand applications available as an extension of the brand.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#contact">Start your brand</a><a class="btn ghost" href="#how">See how it works</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true"><div class="track" id="track"><span>Behind every name</span><i>✦</i><span>Brand creation studio for creators</span><i>✦</i><span>Behind every name</span><i>✦</i><span>Brand creation studio for creators</span><i>✦</i><span>Behind every name</span><i>✦</i><span>Brand creation studio for creators</span><i>✦</i></div></div>
+
+  <section class="band paper" id="how">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">How it works</span><h2>From personal identity to a <span class="hl">distinctive brand</span>.</h2><p class="lede">A clear, collaborative process — from the first conversation to a brand ready to take its next step.</p></div>
+      <div class="steps">
+        <div class="step"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6"/><path d="M17 4a4 4 0 0 1 0 8M22 21c0-3-2-5-4-5.6"/></svg></div><span class="num">STEP 1</span><h3>Discover the identity</h3><p>We explore your story, personality, audience and vision to uncover what makes your brand different.</p></div>
+        <div class="step"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></div><span class="num">STEP 2</span><h3>Build the brand</h3><p>We develop the strategy, story and visual identity that give your brand its own character and direction.</p></div>
+        <div class="step"><div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div><span class="num">STEP 3</span><h3>Bring it to life</h3><p>From brand applications to product concepts and production coordination, we help turn the identity into something real.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Beyond creator merchandise</span><h2>Built around recognition — or built with <span class="hl">an identity</span>.</h2></div>
+      <div class="vs">
+        <div class="old"><span class="tag">Typical creator merchandise</span><h3>Recognition comes first</h3><ul><li>— Built around a familiar face or name</li><li>— Often appeals mainly to existing followers</li><li>— Depends heavily on the creator’s visibility</li></ul></div>
+        <div class="new"><span class="tag">The VANTA approach</span><h3>A brand with its own life</h3><ul><li>✓ A distinct identity, point of view and story</li><li>✓ Designed to connect beyond the existing audience</li><li>✓ Created with long-term brand potential in mind</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="method" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">The name, letter by letter</span><h2>Five letters. One promise to every creator.</h2><p class="lede">VANTA is not just a name. Each letter is a step we take with you, from the first idea to a brand that lasts.</p></div>
+      <ol class="vlist">
+        <li class="vrow"><span class="L" aria-hidden="true">V</span><div class="vt"><span class="vw">V · Vision</span><h3>We see the brand before it exists.</h3></div><div class="vb"><p>We explore your audience, story and style before any design work begins, then define a clear direction for the brand and its future opportunities.</p><p class="you"><b>For you:</b> A clear plan from day one.</p></div></li>
+        <li class="vrow key"><span class="L" aria-hidden="true">A</span><div class="vt"><span class="vw">A · Authenticity</span><h3>A brand with its own identity.</h3></div><div class="vb"><p>Your brand should feel bigger than a name or a face. We build a distinct look and meaning that can connect with your community and stand on its own.</p><p class="you"><b>For you:</b> A brand people choose, not a souvenir.</p></div></li>
+        <li class="vrow"><span class="L" aria-hidden="true">N</span><div class="vt"><span class="vw">N · Narrative</span><h3>Every brand needs a story.</h3></div><div class="vb"><p>We shape the story behind your brand: where it comes from, what it stands for and how it communicates across every touchpoint.</p><p class="you"><b>For you:</b> Meaning your audience connects with.</p></div></li>
+        <li class="vrow"><span class="L" aria-hidden="true">T</span><div class="vt"><span class="vw">T · Transformation</span><h3>From identity to real-world applications.</h3></div><div class="vb"><p>We translate the brand into thoughtful applications and product concepts. When required, we can coordinate the next steps with specialist production partners.</p><p class="you"><b>For you:</b> A consistent brand across digital and physical touchpoints.</p></div></li>
+        <li class="vrow"><span class="L" aria-hidden="true">A</span><div class="vt"><span class="vw">A · Achievement</span><h3>Built for a meaningful next chapter.</h3></div><div class="vb"><p>We help prepare your brand for its next step, from a considered launch direction to a consistent identity that can grow over time.</p><p class="you"><b>For you:</b> A brand foundation designed with the future in mind.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="band paper" id="products">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Brand applications</span><h2>Where your brand comes <span class="hl">to life</span>.</h2><p class="lede">From digital touchpoints to physical products, we design applications that bring your identity into the real world. Product development and production coordination can be scoped as optional extensions.</p></div>
+      <ol class="plist"><li class="prow"><span class="pn">01</span><span class="pt">T-shirts</span><span class="pd">Everyday tees with a clean chest mark</span><span class="pc">Apparel</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">02</span><span class="pt">Sweaters</span><span class="pd">Soft crewnecks for cool evenings</span><span class="pc">Apparel</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">03</span><span class="pt">Hoodies</span><span class="pd">Heavyweight hoodies for long nights</span><span class="pc">Apparel</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">04</span><span class="pt">Water bottles</span><span class="pd">Everyday essentials with a distinctive identity</span><span class="pc">Everyday</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">05</span><span class="pt">Mugs</span><span class="pd">Thoughtful branded objects for daily rituals</span><span class="pc">Everyday</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">06</span><span class="pt">Notebooks</span><span class="pd">Stationery designed around your brand system</span><span class="pc">Everyday</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">07</span><span class="pt">Pens</span><span class="pd">Small details that keep the identity consistent</span><span class="pc">Everyday</span><span class="pa" aria-hidden="true">→</span></li><li class="prow"><span class="pn">08</span><span class="pt">Cup sleeves</span><span class="pd">A simple brand touchpoint on the go</span><span class="pc">Everyday</span><span class="pa" aria-hidden="true">→</span></li></ol>
+    </div>
+  </section>
+
+  <section class="band paper" id="packages">
+    <div class="wrap">
+      <div class="head"><span class="eyebrow">Engagements</span><h2>Choose the level of brand building you need.</h2><p class="lede">Every engagement is scoped around your goals. Product development and production coordination are optional extensions, quoted separately where applicable.</p></div>
+      <fieldset class="pkgs"><legend class="sr">Choose an engagement</legend>
+        <label class="pkg pkg-signature" for="pkg-signature">
+          <input type="radio" name="package" id="pkg-signature" value="VANTA Identity">
+          <div class="pk-top"><span class="tier">Core</span><span class="pick" aria-hidden="true"></span></div>
+          <h3>VANTA Identity</h3>
+          <p class="sub">A strong foundation for a new brand.</p>
+          <ul>
+            <li><span>✓</span><div><b>Brand Discovery</b><span>Understand your story, audience and ambitions.</span></div></li>
+            <li><span>✓</span><div><b>Brand Strategy & Positioning</b><span>Define who the brand is for and what makes it different.</span></div></li>
+            <li><span>✓</span><div><b>Brand Story</b><span>Shape the idea and meaning behind the brand.</span></div></li>
+            <li><span>✓</span><div><b>Logo & Visual Identity</b><span>Create the core visual language, including color and typography.</span></div></li>
+            <li><span>✓</span><div><b>Brand Guidelines</b><span>Document how to use the identity consistently.</span></div></li>
+          </ul>
+          <span class="choose">Choose VANTA Identity</span>
+        </label>
+        <label class="pkg pkg-complete" for="pkg-complete">
+          <input type="radio" name="package" id="pkg-complete" value="VANTA Complete">
+          <div class="pk-top"><span class="tier">Extended</span><span class="pick" aria-hidden="true"></span></div>
+          <h3>VANTA Complete</h3>
+          <p class="sub">A fuller brand system, ready to be applied.</p>
+          <p class="plus">Everything in VANTA Identity, plus:</p>
+          <ul>
+            <li><span>✓</span><div><b>Brand Personality & Voice</b><span>Define how the brand looks, feels and communicates.</span></div></li>
+            <li><span>✓</span><div><b>Extended Visual Identity</b><span>Additional logo variations, graphic elements and layouts.</span></div></li>
+            <li><span>✓</span><div><b>Brand Applications</b><span>Selected digital and physical brand mockups.</span></div></li>
+            <li><span>✓</span><div><b>Social Media Direction</b><span>A visual direction for a consistent social presence.</span></div></li>
+            <li><span>✓</span><div><b>Brand Presentation</b><span>A polished deck that introduces the brand system.</span></div></li>
+          </ul>
+          <span class="choose">Choose VANTA Complete</span>
+        </label>
+        <label class="pkg pkg-black" for="pkg-black">
+          <input type="radio" name="package" id="pkg-black" value="VANTA Signature+">
+          <div class="pk-top"><span class="tier">Strategic</span><span class="pick" aria-hidden="true"></span></div>
+          <h3>VANTA Signature+</h3>
+          <p class="sub">A deeper brand engagement with a path to market.</p>
+          <p class="plus">Everything in VANTA Complete, plus:</p>
+          <ul>
+            <li><span>✓</span><div><b>Market & Competitor Research</b><span>Explore the landscape and relevant opportunities.</span></div></li>
+            <li><span>✓</span><div><b>Product Concepts</b><span>Initial creative direction for selected product ideas.</span></div></li>
+            <li><span>✓</span><div><b>Packaging Direction</b><span>Define how packaging should look and feel.</span></div></li>
+            <li><span>✓</span><div><b>Launch Strategy</b><span>Outline the launch approach and key brand touchpoints.</span></div></li>
+            <li><span>✓</span><div><b>Production Coordination Scope</b><span>Optional coordination with specialist partners, subject to a separate scope and quote.</span></div></li>
+          </ul>
+          <span class="choose">Choose VANTA Signature+</span>
+        </label>
+      </fieldset>
+      <div class="pick-bar" id="pick-bar" aria-live="polite">
+        <p id="pick-text">Choose a package above to continue.</p>
+        <a class="btn" id="pick-wa" href="https://wa.me/966544534408" target="_blank" rel="noopener" aria-disabled="true">Talk to us on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap found">
+      <div class="head" style="margin:0;justify-content:center"><span class="eyebrow">Founding creator program</span><h2>Build something distinctive from the ground up.</h2><p class="lede">We’re inviting a select group of creators to collaborate with VANTA on our first brand projects — shaping our early portfolio and the story behind the studio.</p></div>
+      <div class="perks">
+        <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A66B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Direct collaboration throughout the project</span></div>
+        <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A66B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Brand development shaped around your goals</span></div>
+        <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9A66B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Opportunity to be featured in our portfolio, with your approval</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="contact" style="background:var(--ink);color:var(--ivory);border-top:1px solid var(--line)">
+    <div class="wrap contact">
+      <span class="eyebrow">Let’s talk</span>
+      <p class="chosen" id="chosen" hidden></p>
+      <h2>Let’s build your brand.</h2>
+      <p class="lede" style="margin:0 auto 26px;max-width:54ch">Tell us what you’re imagining. We’ll start with a conversation about your goals, your audience and the right scope for your brand.</p>
+      <svg class="logo-big" viewBox="0 0 520 104" role="img" aria-label="VANTA"><g fill="none" stroke="#C9A66B" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"><path d="M8,8 L40,92 L72,8"/><path d="M112,92 L144,8 L176,92"/><path d="M216,92 L216,8 L280,92 L280,8"/><path d="M320,8 L384,8 M352,8 L352,92"/><path d="M424,92 L456,8 L488,92"/></g><circle cx="508" cy="95" r="9" fill="#F2EFEA"/></svg>
+      <div class="social">
+        <a class="soc" href="tel:+966544534408" aria-label="Call +966 54 453 4408" title="+966 54 453 4408"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2 2A16 16 0 0 1 4 6V5a2 2 0 0 1 1-2z"/></svg><span>Call</span></a>
+        <a class="soc" href="https://wa.me/966544534408?text=Hello%20VANTA%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20your%20brand%20creation%20services." target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.1A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1.3-1.4-1.9-1-1 .8c-1-.5-2-1.5-2.4-2.4l.8-1-1-1.9z"/></svg><span>WhatsApp</span></a>
+        <a class="soc" href="https://www.instagram.com/vanta.sa26/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+      </div>
+      <p class="eyebrow" style="color:var(--faint)">Independent brand creation studio</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><span>© 2026 VANTA Studio</span><span>Brand creation studio for creators · Projects are scoped individually</span></div></footer>
+
+<script>
+(() => {
+  const stage = document.getElementById('stage'), layer = document.getElementById('layer'), flash = document.getElementById('flash');
+  const badge = document.getElementById('badge'); const PHRASE = 'VANTA';
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const BANK = ("every creator has a name people already trust and remember the right brand turns that name into something people want to own " +
+    "a clear strategy gives the brand direction and a visual identity makes it recognizable across every touchpoint " +
+    "from apparel to everyday objects product concepts can bring the identity into the physical world " +
+    "no face printed big no loud logo just a thoughtful identity with a story behind it built to feel relevant beyond a trend " +
+    "vision authenticity narrative transformation achievement the stage stays dark so the name can shine " +
+    "launch day sold out restock in two weeks the community takes it to the gym to the cafe to the stadium to work " +
+    "behind every name there is a story worth telling and a product worth keeping").split(' ');
+  const LOOKS = [
+    {cls:'t-paper', bg:'#F4F1EB', font:"'DM Sans', Arial, sans-serif", w:500},
+    {cls:'t-white', bg:'#FFFFFF', font:"'Libre Caslon Text', Georgia, serif", w:400},
+    {cls:'t-cream', bg:'#EFE6D2', font:"'IBM Plex Mono', 'Courier New', monospace", w:400},
+    {cls:'t-ink',   bg:'#121215', font:"'Comfortaa', 'Trebuchet MS', sans-serif", w:600},
+    {cls:'t-white', bg:'#FBFAF7', font:"'DM Sans', Arial, sans-serif", w:700},
+    {cls:'t-paper', bg:'#ECE6DB', font:"'Libre Caslon Text', Georgia, serif", w:700}
+  ];
+  const rnd = (a,b) => a + Math.random()*(b-a);
+  const pick = a => a[Math.floor(Math.random()*a.length)];
+  const words = n => { let s = Math.floor(Math.random()*BANK.length), o=[]; for (let i=0;i<n;i++) o.push(BANK[(s+i)%BANK.length]); return o.join(' '); };
+  const esc = s => s.replace(/[&<>\"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  function frame(phrase, look, zoom, tilt){
+    const w = stage.clientWidth;
+    const size = Math.max(18, Math.min(34, w/28)) * rnd(.85,1.25);
+    const lines = 13, mid = 6, parts = [];
+    for (let i=0;i<lines;i++){
+      const indent = rnd(-30,30).toFixed(0);
+      if (i===mid) parts.push(`<span class="ln" style="text-indent:${indent}px">${words(Math.floor(rnd(7,12)))} <mark>${esc(phrase)}</mark> ${words(Math.floor(rnd(7,12)))}</span>`);
+      else parts.push(`<span class="ln" style="text-indent:${indent}px">${words(Math.floor(rnd(16,26)))}</span>`);
+    }
+    stage.style.background = look.bg;
+    layer.style.transform = 'none';
+    layer.innerHTML = `<div class="page ${look.cls}" style="font-family:${look.font};font-weight:${look.w};font-size:${size.toFixed(1)}px;line-height:${rnd(1.35,1.75).toFixed(2)}">${parts.join('')}</div>`;
+    const page = layer.firstChild, mark = page.querySelector('mark');
+    const s = stage.getBoundingClientRect(), r = mark.getBoundingClientRect();
+    page.style.transform = `translate(${(s.left + s.width/2 - (r.left + r.width/2)).toFixed(1)}px, ${(s.top + s.height/2 - (r.top + r.height/2)).toFixed(1)}px)`;
+    layer.style.transform = `scale(${zoom}) rotate(${tilt}deg)`;
+  }
+
+  const tick = () => {};
+
+  const sleep = ms => new Promise(r => setTimeout(r, ms));
+  let run = 0, visible = true;
+  async function play(){
+    const my = ++run;
+    const phrase = PHRASE;
+    if (reduce) { frame(phrase, LOOKS[0], 1.2, 0); badge.textContent = 'Still frame'; return; }
+    while (my === run) {
+      if (!visible || document.hidden) { await sleep(300); continue; }
+      const cuts = 22;
+      for (let i=0; i<cuts && my===run; i++){
+        const z = 1.5 * rnd(.92, 1.12);
+        frame(phrase, pick(LOOKS), z.toFixed(3), rnd(-1.6,1.6).toFixed(2));
+        stage.style.setProperty('--edge-blur', rnd(1,2.4).toFixed(1)+'px');
+        tick();
+        await sleep(83);
+      }
+      if (my !== run) return;
+      frame(phrase, LOOKS[3], 1.35, 0);
+      flash.animate([{opacity:.55},{opacity:0}], {duration:260, easing:'ease-out'});
+      layer.animate([{transform:'scale(1.35)'},{transform:'scale(1.55)'}], {duration:2200, easing:'cubic-bezier(.2,.7,.2,1)', fill:'forwards'});
+      await sleep(2300);
+    }
+  }
+
+  new IntersectionObserver(es => { visible = es[0].isIntersecting; }).observe(stage);
+  addEventListener('resize', () => { if (reduce) play(); });
+
+  const hls = document.querySelectorAll('.hl');
+  if (reduce) hls.forEach(h => h.classList.add('on'));
+  else {
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } }), {threshold:.8});
+    hls.forEach(h => io.observe(h));
+  }
+
+  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => {
+    const t = b.dataset.copy, done = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1500); };
+    navigator.clipboard?.writeText(t).then(done, () => {
+      const r = document.createRange(); r.selectNodeContents(b.previousElementSibling);
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    });
+  }));
+
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(play);
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cnt = document.getElementById('ld-count');
+  if (cnt && !reduce) { const t0 = performance.now(); const step = t => { const k = Math.min(1,(t-t0)/900); cnt.textContent = String(Math.round(k*100)).padStart(3,'0'); if (k<1) requestAnimationFrame(step); }; requestAnimationFrame(step); }
+  if (reduce || !window.gsap) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  let lenis = null;
+  if (window.Lenis) {
+    lenis = new Lenis({ lerp: .09, smoothWheel: true });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t*1000)); gsap.ticker.lagSmoothing(0);
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const id = a.getAttribute('href'); const el = id.length>1 ? document.querySelector(id) : document.body;
+      if (el) { e.preventDefault(); lenis.scrollTo(el, { offset: -64, duration: 1.4 }); }
+    }));
+  }
+
+  const split = el => {
+    const out = [];
+    [...el.childNodes].forEach(n => {
+      if (n.nodeType === 3) {
+        n.textContent.split(/(\s+)/).forEach(part => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) { out.push(document.createTextNode(part)); return; }
+          const w = document.createElement('span'); w.className = 'w'; const i = document.createElement('span'); i.className = 'wi'; i.textContent = part; w.appendChild(i); out.push(w);
+        });
+      } else { const w = document.createElement('span'); w.className = 'w'; const i = document.createElement('span'); i.className = 'wi'; i.appendChild(n.cloneNode(true)); w.appendChild(i); out.push(w); }
+    });
+    el.replaceChildren(...out); return el.querySelectorAll('.wi');
+  };
+  document.querySelectorAll('main h1, main h2').forEach(h => {
+    const inHero = !!h.closest('.hero');
+    gsap.from(split(h), { yPercent: 115, duration: .8, ease: 'power4.out', stagger: .045,
+      delay: inHero ? 1.1 : 0, scrollTrigger: inHero ? null : { trigger: h, start: 'top 88%' } });
+  });
+  document.querySelectorAll('.hl').forEach(h => h.classList.remove('on'));
+  ScrollTrigger.batch('.hl', { start: 'top 85%', onEnter: els => els.forEach(e => setTimeout(() => e.classList.add('on'), 650)) });
+
+  gsap.set('.eyebrow, .lede, .step, .vs > div, .vrow .vt, .vrow .vb, .prow, .perks > div, .chip, .soc, .hero-copy .btn', { y: 30, opacity: 0 });
+  ScrollTrigger.batch('.eyebrow, .lede, .step, .vs > div, .vrow .vt, .vrow .vb, .prow, .perks > div, .chip, .soc, .hero-copy .btn', {
+    start: 'top 98%', onEnter: els => gsap.fromTo(els, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: .6, ease: 'power3.out', stagger: .05, overwrite: true })
+  });
+  gsap.from('.stage', { clipPath: 'inset(12% 8% 12% 8% round 22px)', duration: 1.4, ease: 'power4.inOut', delay: 1.0 });
+
+  gsap.to('.stage', { scale: .92, borderRadius: 40, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+  document.querySelectorAll('.vrow .L').forEach((l,i) => gsap.fromTo(l, { y: 40 + i*14 }, { y: -20, ease: 'none', scrollTrigger: { trigger: '#method', start: 'top bottom', end: 'bottom top', scrub: true } }));
+
+  const track = document.getElementById('track');
+  if (track) {
+    let x = 0, dir = -1, speed = 1;
+    if (lenis) lenis.on('scroll', e => { if (e.velocity) { dir = e.velocity > 0 ? -1 : 1; speed = 1 + Math.min(Math.abs(e.velocity)*.25, 6); } });
+    gsap.ticker.add(() => { const half = track.scrollWidth/2; x += dir*speed*.9; if (x <= -half) x += half; if (x > 0) x -= half; track.style.transform = `translateX(${x}px)`; speed += (1-speed)*.05; });
+  }
+
+  if (matchMedia('(pointer:fine)').matches) {
+    document.querySelectorAll('.btn, .soc').forEach(b => {
+      b.addEventListener('mousemove', e => { const r = b.getBoundingClientRect(); gsap.to(b, { x: (e.clientX - r.left - r.width/2)*.3, y: (e.clientY - r.top - r.height/2)*.4, duration: .4, ease: 'power3' }); });
+      b.addEventListener('mouseleave', () => gsap.to(b, { x: 0, y: 0, duration: .7, ease: 'elastic.out(1,.4)' }));
+    });
+  }
+})();
+</script>
+
+<script>
+(() => {
+  const radios = document.querySelectorAll('input[name="package"]');
+  const text = document.getElementById('pick-text'), wa = document.getElementById('pick-wa'), chosen = document.getElementById('chosen');
+  const waBase = 'https://wa.me/966544534408';
+  const set = name => {
+    const msg = `Hi VANTA, I’m interested in the ${name} engagement. I’d like to discuss my brand goals and the project scope. Can we talk?`;
+    text.innerHTML = `You selected <b>${name}</b>. Message us to discuss your goals and project scope.`;
+    wa.href = waBase + '?text=' + encodeURIComponent(msg);
+    wa.removeAttribute('aria-disabled');
+    wa.textContent = `Discuss ${name.replace('VANTA ','')} with us`;
+    chosen.hidden = false; chosen.textContent = `Selected engagement: ${name}`;
+    const soc = document.querySelector('.soc[aria-label="WhatsApp"]'); if (soc) soc.href = wa.href;
+  };
+  radios.forEach(r => r.addEventListener('change', () => r.checked && set(r.value)));
+  const pre = [...radios].find(r => r.checked); if (pre) set(pre.value);
+})();
+</script>
+
+</body></html>
